@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#main{
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+#title-3 {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7vw;
+}
+
+#title-1 {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 7vw;
+}
+
+#title-2{
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 7vw;
+  padding-left: 15%;
+}
+
+h1{
+  padding-inline-start: 0%;
+  padding: 0;
+  line-height: 1 
+}
+
+#title-name{
+  font-family: "Anek Odia", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  letter-spacing: 3px;
+  font-size: 2vw;  
+}
+
+@media (min-width: 992px){
+
+  #title-name{
+    font-size: 1vw;
+  }
+}
+
+#navbar:hover{
+  border-bottom: 1px solid black;
+}
+
+.text-description{
+  justify-content: center;
+  float: right;
+  padding-left: 50%;
+  margin-top: 33%;
+  padding-right: 15%;
+  font-family: "Unna", serif;
+  line-height: 1;
+  font-size: 2vw;
+}
+
+@media (min-width: 992px){
+  .text-description{
+    font-size: 1vw;
+    padding-left: 60%;
+    color: rgb(145, 71, 14);
+  }
+}
+
+.keyword{
+  font-family: serif;
+  font-weight: bold;
+}
+
+.button{
+  justify-content: center;
+  float: right;
+  padding-left: 55%;
+  margin-top: 45%;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+@media (min-width: 992px){
+  .button{
+    justify-content: center;
+    margin-top: 38%;
+    padding-left: 65%;
+  }
+
+  button:hover{
+    background-color: rgb(7, 15, 112);
+    border-color: rgb(7, 15, 112);
+    color: white;
+  }
+}
