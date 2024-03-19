@@ -52,6 +52,11 @@ h1{
   #title-name{
     font-size: 1vw;
   }
+
+  #main{
+    max-height: 100vh;
+    min-height: 100vh;
+  }
 }
 
 #navbar:hover{
@@ -73,7 +78,6 @@ h1{
   .text-description{
     font-size: 1vw;
     padding-left: 60%;
-    color: rgb(145, 71, 14);
   }
 }
 
@@ -102,9 +106,74 @@ button:hover{
     padding-left: 65%;
   }
 
-  button:hover{
-    background-color: rgb(7, 15, 112);
-    border-color: rgb(7, 15, 112);
-    color: white;
+}
+
+#orange-powder{
+  position: fixed;
+  top: 1%;
+  right: 1%;
+}
+
+#blue-powder{
+  position: relative;
+  bottom: 1%;
+  left: 1%;
+}
+
+#about-title{
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
+  letter-spacing: 8px;
+}
+
+#about-subTitle{
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  margin-left: 10%;
+}
+
+.aboutME{
+  margin-top: 18%;
+  padding-left: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-sub{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  padding-bottom: 1%;
+}
+
+#skills-container{
+  display: flex;
+  padding-top: 45%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.skill-text{
+  font-size: 2vw;
+}
+
+@media (min-width: 992px){
+  #skills-container{
+    padding-top: 25%;
   }
+
+  .skill-text{
+    font-size: 1vw;
+  }
+}
+
+.icon-skill{
+  font-size: 3vw;
+  padding-left: 5%;
 }

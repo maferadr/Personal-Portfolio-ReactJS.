@@ -22,7 +22,8 @@ export default function Nav(){
                 {/* Apply some conditionals => If our nav statement is true, display some html */}
                     {
                         nav ? (
-                            <div className="fixed w-full h-screen bg-white/80 flex flex-col justify-center items-center z-20">
+                            <>
+                             <div className="fixed w-full h-screen bg-white/80 flex flex-col justify-center items-center z-20">
                                 <Link to='/' className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-gray-400 m-2 p-4 hover:scale-110 ease-in duration-200">
                                     <AiOutlineHome size={20}/>
                                     <span className="pl-4">HOME</span>
@@ -40,6 +41,8 @@ export default function Nav(){
                                     <span className="pl-4">RESUME</span>
                                 </Link>
                             </div>
+                            </>
+                           
                         ) : (
                            ''
                         )}

@@ -3,9 +3,9 @@ import React from "react";
 export default function Main(){
     return(
         <div id="main" className="">
-            <div className="img-container grid ml-10">
-                <img className="col-start-1 row-start-1 w-70 h-screen object-cover scale-y-[-1] opacity-70" src="../src/assets/orange-powder.png"></img>
-                <img className="col-start-1 row-start-1 my-60 w-30 h-70 object-cover scale-x-[-1] opacity-70" src="../src/assets/blue.png"></img>
+            <div className="img-container grid">
+                <img className="col-start-1 row-start-1 w-100 h-screen object-cover scale-y-[-1] opacity-70" src="../src/assets/orange.png"></img>
+                <img className="col-start-1 row-start-1 my-60 w-30 h-[50%] object-cover scale-x-[-1] opacity-60" src="../src/assets/blue-powder.png"></img>
                 <div id="main-text" className="absolute justify-center my-[10%] ml-[55%]">
                     <h1><span id="title-1">FULL</span> <br></br><span id="title-2">Stack</span>
                     <br></br><span id="title-3">DEVELOPER</span>
@@ -20,7 +20,7 @@ export default function Main(){
                     Contact
                 </button>
                 </div>
-                <div className="absolute bottom-10">
+                <div className="absolute bottom-10 ml-10">
                     <h2 id="title-name">MARIA ANGULO.</h2>
                 </div>
                 <div id="date" className="transform rotate-90 absolute top-10">
