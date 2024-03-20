@@ -2,6 +2,7 @@ import React from "react";
 import Icons from "../icons";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { SiDatabricks } from "react-icons/si";
+import { IoLanguageSharp } from "react-icons/io5";
 
 const Skills = [
     {
@@ -15,13 +16,23 @@ const Skills = [
         name: 'BackEnd',
         description: 'Express JS, Node JS, MERN Applications, MySQL, NoSQL, MongoDB',
         icon: <SiDatabricks/>
-    }
+    },
+    {
+        id: 3,
+        name: 'Languages',
+        description: [
+            'Spanish',
+            ' ',
+            'English'
+        ],
+        icon: <IoLanguageSharp/>
+    },
 ]
 
 export default function AboutMe(){
     return (
         <>
-            <div id="aboutMe" className="">
+            <div id="aboutMe" className="bg-gray-100">
                 <div className="img-container grid">
                     <img id="orange-powder" className="col-start-1 row-start-1 w-70 h-[50%] object-cover object-top-right scale-y-[-1] opacity-70" src="../src/assets/orange.png"></img>
                     <img id="blue-powder" className="col-start-1 row-start-1 my-60 w-30 h-[50%] object-cover scale-x-[-1] opacity-50" src="../src/assets/blue-powder.png"></img>
@@ -48,13 +59,15 @@ export default function AboutMe(){
                     <Icons/>
 
                     {/* Skills    */}
-                    <div id="skills-container" className="absolute mx-auto px-4">
-                        <div className="mt-6 grid grid-cols-2">
+                    <div id="skills-container" className="flex justify-center absolute mx-auto px-4">
+                        <h2 className="transform rotate-90 second-title py-5">What am I
+                            <span className="good"> GOOD AT?</span></h2>
+                        <div id="skill-display" className="mt-6 grid grid-cols-2">
                     {       Skills.map((skill) => (
                             <div key={skill.id} className="group relative">
                                 <div className="icon-skill">
                                 {skill.icon}
-                                </div>    
+                                </div>  
                                 <div className="mt-4 flex justify-between">
                                     <div className="skill-text">
                                         <h3 className="text-sub text-gray-700">
@@ -67,6 +80,7 @@ export default function AboutMe(){
                             </div>
                              ))}
                         </div>
+                        <img id="memoji" className="fixed object object-right-bottom bottom-0" src="../src/assets/memoji.png"></img>
                     </div>
                 </div> 
                 </div>

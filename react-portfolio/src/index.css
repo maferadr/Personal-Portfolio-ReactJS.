@@ -72,6 +72,7 @@ h1{
   font-family: "Unna", serif;
   line-height: 1;
   font-size: 2vw;
+  padding-bottom: 2%;
 }
 
 @media (min-width: 992px){
@@ -141,6 +142,8 @@ button:hover{
   padding-left: 30%;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+
 }
 
 .text-sub{
@@ -156,24 +159,60 @@ button:hover{
   padding-top: 45%;
   justify-content: center;
   align-items: center;
-  padding-left: 15%;
+  padding-left: 10%;
 }
 
 .skill-text{
   font-size: 2vw;
 }
 
+.icon-skill{
+  font-size: 3vw;
+  padding-left: 5%;
+}
+
+.second-title{
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  line-height: 1;
+  margin-top: 10%;
+  margin-right: 10%;
+  border-top: 1px solid rgba(0, 0, 0, 0.304);
+  letter-spacing: 3px;
+}
+
+.good{
+  font-family: "Londrina Outline", sans-serif;
+  letter-spacing: 0;
+}
+
+.text-portfolio{
+  font-family: "Unna", serif;
+  line-height: 1;
+  font-size: 2.5vw;
+}
+
 @media (min-width: 992px){
   #skills-container{
-    padding-top: 25%;
+    padding-top: 30%;
   }
 
   .skill-text{
     font-size: 1vw;
   }
-}
 
-.icon-skill{
-  font-size: 3vw;
-  padding-left: 5%;
+  .second-title{
+    font-size: 2vw;
+    margin-top: 10%;
+  }
+
+  .text-portfolio{
+    font-size: 1vw;
+  }
+
+  #memoji{
+    margin-top: 60%;
+  }
 }
