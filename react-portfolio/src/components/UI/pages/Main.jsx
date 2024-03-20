@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Main(){
     return(
@@ -8,7 +9,13 @@ export default function Main(){
                 <img className="col-start-1 row-start-1 my-60 w-30 h-[50%] object-cover scale-x-[-1] opacity-60" src="../src/assets/blue-powder.png"></img>
                 <div id="main-text" className="absolute justify-center my-[10%] ml-[55%]">
                     <h1><span id="title-1">FULL</span> <br></br><span id="title-2">Stack</span>
-                    <br></br><span id="title-3">DEVELOPER</span>
+                    <br></br><span id="title-3">
+                    <TypeAnimation
+                            sequence={['DEVEL', 500, 'DEVELOPER', 500]}
+                            repeat={1}
+                            speed={15}
+                            />
+                    </span>
                     </h1>
                 </div>
                 <div className="absolute text-description">

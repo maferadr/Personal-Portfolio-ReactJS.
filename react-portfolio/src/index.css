@@ -75,13 +75,6 @@ h1{
   padding-bottom: 2%;
 }
 
-@media (min-width: 992px){
-  .text-description{
-    font-size: 1vw;
-    padding-left: 60%;
-  }
-}
-
 .keyword{
   font-family: serif;
   font-weight: bold;
@@ -100,14 +93,6 @@ button:hover{
   border-color: black;
 }
 
-@media (min-width: 992px){
-  .button{
-    justify-content: center;
-    margin-top: 38%;
-    padding-left: 65%;
-  }
-
-}
 
 #orange-powder{
   position: fixed;
@@ -160,10 +145,11 @@ button:hover{
   justify-content: center;
   align-items: center;
   padding-left: 10%;
+  padding-right: 5%;
 }
 
 .skill-text{
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .icon-skill{
@@ -175,17 +161,21 @@ button:hover{
   font-family: "Patua One", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 4vw;
   line-height: 1;
   margin-top: 10%;
-  margin-right: 10%;
-  border-top: 1px solid rgba(0, 0, 0, 0.304);
+  margin-right: 5%;
+  border-right: 1px solid rgba(0, 0, 0, 0.304);
   letter-spacing: 3px;
+  color: black;
+  padding-left: 5%;
+  display: none;
 }
 
 .good{
   font-family: "Londrina Outline", sans-serif;
   letter-spacing: 0;
+  color: rgb(212, 128, 12);
 }
 
 .text-portfolio{
@@ -194,9 +184,25 @@ button:hover{
   font-size: 2.5vw;
 }
 
+#memoji{
+  height: 30vh;
+  width: 35vw;
+  margin-left: 60%;
+  z-index: 100;
+}
+
 @media (min-width: 992px){
+  .text-description{
+    font-size: 1.2vw;
+    padding-left: 60%;
+  }
+
+  .aboutME{
+    padding-left: 30%;
+  }
+
   #skills-container{
-    padding-top: 30%;
+    padding-top: 25%;
   }
 
   .skill-text{
@@ -204,15 +210,30 @@ button:hover{
   }
 
   .second-title{
-    font-size: 2vw;
-    margin-top: 10%;
+    font-size: 5vw;
+    margin-top: 5%;
+    display: block;
   }
 
   .text-portfolio{
     font-size: 1vw;
   }
 
+  #skill-display{
+    padding-top: 4%;
+  }
+
   #memoji{
-    margin-top: 60%;
+    height: 40vh;
+    width: 30vw;
+    margin-left: 65%;
+    padding-top: 1%;
+    display: block;
+  }
+
+  .button{
+    justify-content: center;
+    margin-top: 38%;
+    padding-left: 65%;
   }
 }

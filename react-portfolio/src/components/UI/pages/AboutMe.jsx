@@ -3,30 +3,38 @@ import Icons from "../icons";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { SiDatabricks } from "react-icons/si";
 import { IoLanguageSharp } from "react-icons/io5";
+import { FaHandsHelping } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 const Skills = [
     {
         id: 1,
         name: 'FrontEnd',
-        description: 'HTML5, CSS, JavaScript, React JS, HandleBars',
+        description: 'HTML5, CSS, JavaScript, React JS, HandleBars.',
         icon: <HiMiniCodeBracket/>
     },
     {
         id: 2,
         name: 'BackEnd',
-        description: 'Express JS, Node JS, MERN Applications, MySQL, NoSQL, MongoDB',
+        description: 'Express JS, Node JS, MERN Applications, MySQL, NoSQL, MongoDB.',
         icon: <SiDatabricks/>
     },
     {
         id: 3,
+        name: 'Soft Skills',
+        description: 'Team Work, Leadership, Enthusiastic, Communicative.',
+        icon: <FaHandsHelping/>
+    },
+    {
+        id: 4,
         name: 'Languages',
         description: [
-            'Spanish',
+            'Spanish - Native Language.',
             ' ',
-            'English'
+            'English - Fluent.'
         ],
         icon: <IoLanguageSharp/>
-    },
+    }
 ]
 
 export default function AboutMe(){
@@ -43,7 +51,7 @@ export default function AboutMe(){
                             <span id="about-subTitle">Angulo.</span>
                         </h1>
                     </div>
-                    <div className="flex justify-center absolute text-description aboutME">
+                    <div className="flex justify-between absolute text-description aboutME">
                         <p>
                             <span className="text-sub">Developing for a Reason.</span>
                             <br></br>
@@ -59,11 +67,17 @@ export default function AboutMe(){
                     <Icons/>
 
                     {/* Skills    */}
-                    <div id="skills-container" className="flex justify-center absolute mx-auto px-4">
-                        <h2 className="transform rotate-90 second-title py-5">What am I
-                            <span className="good"> GOOD AT?</span></h2>
+                    <div id="skills-container" className="flex justify-center absolute mx-auto px-2">
+                        <h2 className="second-title pr-4">What am I
+                            <span className="good">
+                            <TypeAnimation
+                            sequence={[' GOOD', 500, ' GOOD AT?', 500]}
+                            repeat={1}
+                            speed={15}
+                            /></span></h2>
+
                         <div id="skill-display" className="mt-6 grid grid-cols-2">
-                    {       Skills.map((skill) => (
+                            {Skills.map((skill) => (
                             <div key={skill.id} className="group relative">
                                 <div className="icon-skill">
                                 {skill.icon}
@@ -80,7 +94,6 @@ export default function AboutMe(){
                             </div>
                              ))}
                         </div>
-                        <img id="memoji" className="fixed object object-right-bottom bottom-0" src="../src/assets/memoji.png"></img>
                     </div>
                 </div> 
                 </div>

@@ -4,7 +4,7 @@ import Icons from "../icons";
 const projects = [
     {
         name: 'CouchLock Movie Finder',
-        description: '2 Group Project based on a third-party API application in which the user searches for movies getting all information about it. Making use of Local Storage, the user was able to save them in favorites for later view.',
+        description: 'Third Party API application that displays movies searches and store User preferences through Local Storage. BUILT with JavaScript and HTML only.',
         imageSrc: 'https://github.com/venecoderr/couchlock-movie-finder/blob/main/assets/img/bg-test2.jpg?raw=true',
         href: 'https://github.com/venecoderr/couchlock-movie-finder.git'
         },
@@ -15,12 +15,17 @@ const projects = [
     href: 'https://github.com/maferadr/weather-dashboard.git'
     },
     {
+        name: 'Final Bootcamp Project',
+        description: 'As part of a Bootcamp Graduated Student, have created this group project as a MERN Application. NOTE: Will add this later',
+        imageSrc: 'https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        href: ''
+    },
+    {
     name: 'Resume',
     description: 'GET to know more about me!',
     imageSrc: 'https://images.pexels.com/photos/16450744/pexels-photo-16450744/free-photo-of-telefono-inteligente-mesa-navegador-pantalla.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     href: 'https://www.linkedin.com/in/maria-angulo-5249552b5/'
-    }
-
+    },
  
 ]
 export default function Portfolio(){
@@ -30,11 +35,13 @@ export default function Portfolio(){
         <div className="absolute bg-gray-100 portfolio-display">
         <Icons/>
         <div className="mx-auto max-w-7xl px-14">
-        <div className=" mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 id="about-title" className="portfolio">CRAFTING
-          <span className="good"> SOME</span> ART</h2>
-            <p></p>
-          <div className="mt-6 space-y-12 gap gap-x-6 lg:grid lg:grid-cols-2 lg:space-y-0">
+        <div className=" mx-auto max-w-2xl py-10 sm:py-20 lg:max-w-none lg:py-25">
+          <div className="flex justify-between">
+            <h2 id="about-title" className="portfolio">CRAFTING
+            <span className="good"> SOME</span> ART</h2>
+            <img id="memoji" className="fixed object object-right-bottom bottom-0 transform rotate-30" src="../src/assets/memoji.png"></img>
+          </div>
+          <div className="mt-6 space-y-12 gap gap-x-6 gap-y-3 lg:grid lg:grid-cols-2 lg:space-y-0">
             {projects.map((project) => (
               <div key={project.name} className="group relative">
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
