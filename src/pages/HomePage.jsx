@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
-export default function Main(){
+export default function HomePage(){
     return(
         <div id="main" className="">
             <div className="img-container grid">
