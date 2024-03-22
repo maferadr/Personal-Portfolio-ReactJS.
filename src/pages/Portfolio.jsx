@@ -39,7 +39,7 @@ export default function Portfolio(){
           <div className="flex justify-between">
             <h2 id="about-title" className="portfolio">CRAFTING
             <span className="good"> SOME</span> ART</h2>
-            <img id="memoji" className="fixed object object-right-bottom bottom-0 transform rotate-30" src="../src/assets/memoji.png"></img>
+            <img id="memoji" className="fixed object object-right-bottom bottom-0 transform rotate-30" src="/assets/memoji.png"></img>
           </div>
           <div className="mt-6 space-y-12 gap gap-x-6 gap-y-3 lg:grid lg:grid-cols-2 lg:space-y-0">
             {projects.map((project) => (
