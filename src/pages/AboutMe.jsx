@@ -1,5 +1,5 @@
 import React from "react";
-import Icons from "../icons";
+import Icons from "../components/icons";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { SiDatabricks } from "react-icons/si";
 import { IoLanguageSharp } from "react-icons/io5";

@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 import App from './App.jsx';
-import Main from './components/UI/pages/Main.jsx';
-import AboutMe from './components/UI/pages/AboutMe.jsx';
-import Portfolio from './components/UI/pages/Portfolio.jsx';
-import Contact from './components/UI/pages/Contact.jsx';
+import Main from './pages/Main.jsx';
+import AboutMe from './pages/AboutMe.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import Contact from './pages/Contact.jsx';
 
 const router = createBrowserRouter([
   {
