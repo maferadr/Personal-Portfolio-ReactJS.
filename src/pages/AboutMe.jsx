@@ -40,63 +40,49 @@ const Skills = [
 export default function AboutMe(){
     return (
         <>
-            <div id="aboutMe" className="bg-gray-100">
+            <div id="aboutMe" className="bg-amber-50 w-screen">
                 <div className="img-container grid">
                     <img id="orange-powder" className="col-start-1 row-start-1 w-70 h-[50%] object-cover object-top-right scale-y-[-1] opacity-70" src="/assets/orange.png"></img>
-                    <img id="blue-powder" className="col-start-1 row-start-1 my-60 w-30 h-[50%] object-cover scale-x-[-1] opacity-50" src="/assets/blue-powder.png"></img>
-                    <div className="absolute justify-center my-[8%] ml-[45%]">
-                        <h1>
+                    <div className="absolute justify-center my-[8%] text-container">
+                        <h1 className="ml-[65%]">
                             <span id="about-title">MARIA</span>
                             <br></br>
                             <span id="about-subTitle">Angulo.</span>
                         </h1>
-                    </div>
-                    <div className="flex justify-between absolute text-description aboutME">
-                        <p>
-                            <span className="text-sub">Developing for a Reason.</span>
-                            <br></br>
-                            Counting over 2 years pursuing this path, and looking forward to keep growing in it, realized
-                            there's nothing that can say more about you than the knowledge you DECIDE to acquire and the experience
-                            you GO THROUGH.
-                        </p>
-                        <p className="ml-5">
-                            Certified as a Full Stack Developer from the University of Central Florida’s Coding Bootcamp, plus some short-term certificates in coding. Extremely passionate about Front-End Code and increasingly delighted with BackEnd.
-                            Soon to course Python, AI for Web Apps, and Mobile Applications Development.
-                        </p>
-                    </div>
-                    <Icons/>
-
-                    {/* Skills    */}
-                    <div id="skills-container" className="flex justify-center absolute mx-auto px-2">
-                        <h2 className="second-title pr-4">What am I
-                            <span className="good">
+                        <div className="absolute text-description">
+                        <p className="py-4 px-2">
+                            <span className="text-sub"> 
                             <TypeAnimation
-                            sequence={[' GOOD', 500, ' GOOD AT?', 500]}
+                            sequence={['Developing for a reason.', 500, 'Developing for a reason.', 500]}
                             repeat={1}
                             speed={15}
-                            /></span></h2>
-
-                        <div id="skill-display" className="mt-6 grid grid-cols-2">
-                            {Skills.map((skill) => (
-                            <div key={skill.id} className="group relative">
-                                <div className="icon-skill">
-                                {skill.icon}
-                                </div>  
-                                <div className="mt-4 flex justify-between">
-                                    <div className="skill-text">
-                                        <h3 className="text-sub text-gray-700">
-                                        <span aria-hidden="true" className="absolute inset-0" />
-                                        {skill.name}
-                                        </h3>
-                                        <p className="mt-1 text-gray-500">{skill.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                             ))}
+                            /></span>
+                            <br></br>
+                            Passionate and extremely delighted about Front-End coding, cause everything is about FIRST Impressions and presentation.
+                            Strong believer that knowledge and dedication can describe you more than the experience you can even have about something, and 
+                            my curiousity in coding keeps growing with a non-ending goal. This is me, a 22 years old girl with over 3 years of experience in 
+                            this coding path open to new opportunities and all the proficiency given out of it.
+                            <br></br>
+                            <br></br>
+                            My work is what makes me feel mysefl, what makes me <strong>ME</strong>, dedicated, curious, problem solving, and interested about learning
+                            new things every day, cause growing from that is the only way you can get the <strong>BEST</strong> version of yourself.
+                        </p>
+                        <div id="resume-btn" className="absolute button top-2">
+                        <button className="bg-transparent rounded p-3">
+                            <a href="https://docs.google.com/document/d/1HPLYZVccxTxvJjwGNhOOz-vbmU-zZBSSz-FGQ1KtZ1Y/edit?usp=sharing">
+                                Resume
+                            </a>
+                        </button>
+                    </div>
                         </div>
                     </div>
-                </div> 
+                    <Icons/>
+                    <div className="picture-container left-0">
+                        <img className="about-picture object-cover" src="/assets/about-me.jpeg"></img>
+                    </div>
+                   
                 </div>
+                </div> 
         </>
     )
 };

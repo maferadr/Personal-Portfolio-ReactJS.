@@ -30,6 +30,11 @@
   padding-left: 15%;
 }
 
+.good{
+  font-family: "Londrina Outline", sans-serif;
+  color: orange;
+}
+
 h1{
   padding-inline-start: 0%;
   padding: 0;
@@ -47,23 +52,7 @@ h1{
   font-size: 2vw;  
 }
 
-@media (min-width: 992px){
-
-  #title-name{
-    font-size: 1vw;
-  }
-
-  #main{
-    max-height: 100vh;
-    min-height: 100vh;
-  }
-}
-
-#navbar:hover{
-  border-bottom: 1px solid black;
-}
-
-.text-description{
+.home-description{
   justify-content: center;
   float: right;
   padding-left: 50%;
@@ -73,6 +62,22 @@ h1{
   line-height: 1;
   font-size: 2vw;
   padding-bottom: 2%;
+}
+
+#navbar:hover{
+  border-bottom: 1px solid black;
+}
+
+.text-description{
+  justify-content: center;
+  width: 100vw;
+  margin-top: 33%;
+  font-family: "Unna", serif;
+  line-height: 1;
+  font-size: 2.5vw;
+  padding: 5%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 }
 
 .keyword{
@@ -98,6 +103,7 @@ button:hover{
   position: fixed;
   top: 1%;
   right: 1%;
+  display: none;
 }
 
 #blue-powder{
@@ -112,6 +118,7 @@ button:hover{
   font-style: normal;
   font-size: 5vw;
   letter-spacing: 8px;
+  color: wheat;
 }
 
 #about-subTitle{
@@ -120,15 +127,20 @@ button:hover{
   font-style: normal;
   font-size: 3vw;
   margin-left: 10%;
+  color: wheat;
+}
+
+.text-container{
+  margin-top: 55%;
 }
 
 .aboutME{
-  margin-top: 18%;
+  margin-top: 50%;
   padding-left: 30%;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-
+  background-color: #fffbeb;
 }
 
 .text-sub{
@@ -141,7 +153,7 @@ button:hover{
 
 #skills-container{
   display: flex;
-  padding-top: 45%;
+  padding-top: 72%;
   justify-content: center;
   align-items: center;
   padding-left: 10%;
@@ -172,11 +184,6 @@ button:hover{
   display: none;
 }
 
-.good{
-  font-family: "Londrina Outline", sans-serif;
-  letter-spacing: 0;
-  color: rgb(212, 128, 12);
-}
 
 .text-portfolio{
   font-family: "Unna", serif;
@@ -190,19 +197,121 @@ button:hover{
   margin-left: 60%;
   z-index: 100;
 }
+.about-picture{
+  width: 100vw;
+  height: 55vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-column{
+  margin-top: 20%;
+  padding: 5%;
+}
+
+.text-2xl{
+  color: rgb(8, 8, 54);
+  font-family: "Unna", serif;
+  font-size: 3.5vw;
+}
+
+.text-2xl:hover{
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.text-base{
+  color: rgba(0, 0, 0, 0.647);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.304);
+  font-family: "Unna", serif;
+  font-size: 3vw;
+}
+
+#resume-btn{
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.lg-img-project{
+  height: 40vh;
+  width: 100vw;
+}
+
+.lg-img-project:hover, .md-img-project:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.md-img-project{
+  height: 40vh;
+  width: 100vw;
+}
+
+#md-project-name{
+  line-height: 1;
+}
+
+
+.portfolio{
+  color: black;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-size: 5vw;
+}
+
+#repo-link:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.project-name:hover{
+  color: black;
+}
+
+.portfolio-main{
+  font-family: "Unna", serif;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.major-container{
+  display: flex;
+  justify-content: center;
+}
+
+.title-education{
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-size: 3vw;
+}
 
 @media (min-width: 992px){
-  .text-description{
-    font-size: 1.2vw;
-    padding-left: 60%;
+
+  #title-name{
+    font-size: 1vw;
   }
 
-  .aboutME{
-    padding-left: 30%;
+  #main{
+    max-height: 100vh;
+    min-height: 100vh;
+  }
+
+  .text-description{
+    font-size: 1vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 1%;
+    max-width: 45vw;
+    overflow-wrap: break-word;
   }
 
   #skills-container{
     padding-top: 25%;
+    padding-left: 45%;
   }
 
   .skill-text{
@@ -226,7 +335,7 @@ button:hover{
   #memoji{
     height: 40vh;
     width: 30vw;
-    margin-left: 65%;
+    margin-left: 70%;
     padding-top: 1%;
     display: block;
   }
@@ -235,5 +344,57 @@ button:hover{
     justify-content: center;
     margin-top: 38%;
     padding-left: 65%;
+  }
+
+  .about-picture{
+    height: 100vh;
+    width: 40vw;
+    float: left;
+    justify-content: start;
+  }
+
+  .text-container{
+    margin-top: 10%;
+    padding-left: 50%;
+  }
+
+  .home-description{
+    justify-content: center;
+    float: right;
+    padding-left: 60%;
+    margin-top: 33%;
+    padding-right: 15%;
+    font-family: "Unna", serif;
+    line-height: 1;
+    font-size: 1vw;
+    padding-bottom: 2%;
+  }
+
+  #about-title, #about-subTitle{
+    color: black;
+  }
+
+  #orange-powder{
+    display: block;
+  }
+
+  .skills-column{
+    margin-top: 0%;
+  }
+
+  .text-base{
+    font-size: 1vw;
+  }
+
+  .text-2xl{
+    font-size: 1.5vw;
+  }
+
+  .md-project{
+    display: block;
+  }
+
+  #icons{
+    font-size: 1.5vw;
   }
 }

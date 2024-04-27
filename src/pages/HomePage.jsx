@@ -18,13 +18,13 @@ export default function HomePage(){
                     </span>
                     </h1>
                 </div>
-                <div className="absolute text-description">
+                <div className="absolute home-description">
                     <p>Having a <span className="keyword">COLORFUL </span>mind,makes you <span className="keyword">DEVELOP </span>art.</p>
                     <p>Increasingly delighted with coding and Crafting for people.</p>
                 </div>
                 <div className="absolute button">
                 <button class="bg-transparent text-brown-700 font-semibold py-2 px-4 border rounded">
-                    Contact
+                    <a href="mailto:maferadr0604@gmail.com">Contact</a>
                 </button>
                 </div>
                 <div className="absolute bottom-10 ml-10">

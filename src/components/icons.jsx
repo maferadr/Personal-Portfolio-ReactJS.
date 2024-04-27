@@ -7,9 +7,9 @@ export default function Icons(){
         <>
             <div id="icons" className="absolute flex justify-center p-3 space-x-4">
                 <p>
-                    <span><AiFillLinkedin/></span>
-                    <span><AiFillGithub/></span>
-                    <span><BiLogoGmail/></span>
+                    <span className="icon"><a href="https://www.linkedin.com/in/maria-angulo-5249552b5/"><AiFillLinkedin/></a></span>
+                    <span className="icon"><a href="https://github.com/maferadr"><AiFillGithub/></a></span>
+                    <span className="icon"><a href="mailto:maferadr0604@gmail.com"><BiLogoGmail/></a></span>
                 </p>
             </div>
         </>

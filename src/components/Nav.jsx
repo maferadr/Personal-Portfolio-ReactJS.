@@ -36,9 +36,9 @@ export default function Nav(){
                                     <AiOutlineFolderOpen size={20}/>
                                     <span className="pl-4">PORTFOLIO</span>
                                 </Link>
-                                <Link to='/contact' className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-gray-400 m-2 p-4 hover:scale-110 ease-in duration-200">
+                                <Link to='/education' className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-gray-400 m-2 p-4 hover:scale-110 ease-in duration-200">
                                     <AiOutlineSolution size={20}/>
-                                    <span className="pl-4">CONTACT</span>
+                                    <span className="pl-4">EDUCATION</span>
                                 </Link>
                             </div>
                             </>
@@ -52,7 +52,7 @@ export default function Nav(){
                             <Link id="navbar" to='/' className="justify-between m-3 border-b-2">HOME</Link>
                             <Link id="navbar" to='/about' className="justify-between m-3 border-b-2">ABOUT ME</Link>
                             <Link id="navbar" to='/portfolio' className="justify-between m-3 border-b-2">PORTFOLIO</Link>
-                            <Link id="navbar" to='/contact' className="justify-between m-3 border-b-2">CONTACT</Link>
+                            <Link id="navbar" to='/education' className="justify-between m-3 border-b-2">EDUCATION</Link>
                     </div>
                 </div>  
             </div>
