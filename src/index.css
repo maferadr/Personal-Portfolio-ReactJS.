@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #main{
-  max-height: 100vh;
+  max-height: 100vmax;
   min-height: 100vh;
 }
 
@@ -28,6 +28,12 @@
   font-style: normal;
   font-size: 7vw;
   padding-left: 15%;
+}
+
+.myself-main{
+  float: bottom;
+  margin-top: 45%;
+  margin-left: 15%;
 }
 
 .good{
@@ -191,12 +197,6 @@ button:hover{
   font-size: 2.5vw;
 }
 
-#memoji{
-  height: 30vh;
-  width: 35vw;
-  margin-left: 60%;
-  z-index: 100;
-}
 .about-picture{
   width: 100vw;
   height: 55vh;
@@ -262,32 +262,100 @@ button:hover{
   font-size: 5vw;
 }
 
-#repo-link:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
 .project-name:hover{
   color: black;
 }
 
+.repo-btn{
+  font-family: "Unna", serif;
+}
+
 .portfolio-main{
   font-family: "Unna", serif;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   letter-spacing: 2px;
 }
 
-.major-container{
+.education-container{
+  padding-top: 5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding-left: 5%;
 }
 
-.title-education{
+.edu-1-title{
   font-family: "Patua One", serif;
   font-weight: 400;
   font-size: 3vw;
+  letter-spacing: 3px;
+}
+
+.edu-2-title{
+  letter-spacing: 0px;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-size: 3vw;
+}
+
+.edu-place{
+  font-family: "Unna", serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.525);
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.edu-text{
+  font-family: "Unna", serif;
+  line-height: 1;
+  padding-top: 2%;
+}
+
+.container-edu{
+  width: 85vw;
+}
+
+#icon-carousel{
+  color: white;
+}
+
+.picture-education{
+  width: 100vw;
+  height: 30vh;
+  opacity: 0.7;
+}
+
+.picture-education:hover, .edu-place:hover{
+  transform: scale(1.1);
+  transition-duration: 2s;
+  cursor: pointer;
+}
+
+/* Scroll Down animations */
+@keyframes show {
+  from{
+      opacity: 0;
+      scale: 25%;
+  }
+  to{
+      opacity: 1;
+      scale: 100%;
+  }
+}
+
+#project-container{
+  view-timeline-name: --iframe;
+  view-timeline-axis: block;
+
+  animation-timeline: --iframe;
+  animation-name: show;
+  animation-duration: 5s;
+
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
 }
 
 @media (min-width: 992px){
@@ -330,14 +398,6 @@ button:hover{
 
   #skill-display{
     padding-top: 4%;
-  }
-
-  #memoji{
-    height: 40vh;
-    width: 30vw;
-    margin-left: 70%;
-    padding-top: 1%;
-    display: block;
   }
 
   .button{
@@ -397,4 +457,26 @@ button:hover{
   #icons{
     font-size: 1.5vw;
   }
+
+  .education-container{
+    padding-left: 20%;
+  }
+
+  .container-edu{
+    width: 30vw;
+  }
+
+  .picture-education{
+    width: 30vw;
+    height: 100vh;
+    float: right;
+    justify-content: end;
+  }
+
+  .myself-main{
+    float: bottom;
+    margin-top: 16%;
+    margin-left: 28%;
+  }
+  
 }

@@ -3,10 +3,11 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HomePage(){
     return(
-        <div id="main" className="">
-            <div className="img-container grid">
+        <div id="main" className="bg-amber-50">
+            <div className="img-container grid h-screen">
                 <img className="col-start-1 row-start-1 w-100 h-screen object-cover scale-y-[-1] opacity-70" src="/assets/orange.png"></img>
                 <img className="col-start-1 row-start-1 my-60 w-30 h-[50%] object-cover scale-x-[-1] opacity-60" src="/assets/blue-powder.png"></img>
+                <img className="myself-main col-start-1 row-start-1 w-30 h-[50%] object-cover object-bottom bottom-0" src="/assets/me-main.png"></img>
                 <div id="main-text" className="absolute justify-center my-[10%] ml-[55%]">
                     <h1><span id="title-1">FULL</span> <br></br><span id="title-2">Stack</span>
                     <br></br><span id="title-3">

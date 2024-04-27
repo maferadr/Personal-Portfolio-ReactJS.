@@ -1,6 +1,5 @@
 import React from "react";
 import Icons from "../components/icons";
-import { TypeAnimation } from "react-type-animation";
 
 const projects = [
   {
@@ -68,19 +67,14 @@ export default function Portfolio(){
           <div className="flex justify-between">
             <h2 className="portfolio">CRAFTING
             <span className="good"> SOME</span> ART</h2>
-            <img id="memoji" className="fixed object object-right-bottom bottom-0 transform rotate-30" src="/assets/memoji.png"></img>
+            <img id="bluePowder" className="fixed object object-right-bottom bottom-0" src="/assets/blue-powder.png"></img>
           </div>
           <p className="portfolio-main">  
-          <br></br>
-          <TypeAnimation
-                            sequence={['Designing for people is what makes', 500, 'Designing for people is what makes me Happy!', 500]}
-                            repeat={1}
-                            speed={15}
-                            />
+          Designing for people is what makes me Happy!
           </p>
           <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
               {projects.map((project)=>(
-                <div className="col-span-2 py-2" key={project.name}>
+                <div id="project-container" className="col-span-2 py-2" key={project.name}>
                    <div>
                 <img src={project.imageSrc} className="lg-img-project object-cover rounded"></img>
               </div>
@@ -88,14 +82,18 @@ export default function Portfolio(){
               <h3 className="project-name mt-6 text-sm text-gray-500">
                 <a href={project.href}>{project.name}</a>
               </h3>
-              <p className="text-portfolio">{project.description}</p>
-              <p id="repo-link" className="flex pt-1 text-portfolio text-sm justify-center"><a href={project.repoHref}>Check my Repo!</a></p>
+              <p className="text-portfolio md-project hidden">{project.description}</p>
+              <div className=" flex justify-center">
+                      <button className="repo-btn p-3 text-sm rounded">
+                      <a href={project.repoHref}>Get Repo</a>
+                      </button>
+                    </div>
                 </div>
             ))}
       
             {/* Third project */}
                 {practiceProjects.map((practice) =>(
-                <div className="pl-2 py-2" key={practice.name}>
+                <div id="project-container" className="pl-2 py-2" key={practice.name}>
                     <div>
                       <img src={practice.imageSrc} className="md-img-project object-cover object-center rounded"></img>
                     </div>
@@ -103,7 +101,11 @@ export default function Portfolio(){
                       <a href={practice.href}>{practice.name}</a>
                     </h3>
                     <p className="text-portfolio md-project hidden">{practice.description}</p>
-                    <p id="repo-link" className="flex pt-2 text-portfolio text-sm justify-center"><a href={practice.repoHref}>Check my Repo!</a></p>
+                    <div className=" flex justify-center">
+                      <button className="repo-btn p-3 text-sm rounded">
+                      <a href={practice.repoHref}>Get Repo</a>
+                      </button>
+                    </div>
                 </div>
                 ))}
           </div>
