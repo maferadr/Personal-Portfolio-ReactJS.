@@ -31,9 +31,10 @@
 }
 
 .myself-main{
-  width: 100vw;
+  width: 50vw;
   height: 60vh;
   margin-left: 15%;
+  margin-top: 50%;
 }
 
 .good{
@@ -473,10 +474,8 @@ button:hover{
   }
 
   .myself-main{
-    margin-left: 28%;
-    margin-top: 12%;
-    width: 100vw;
-    height: 80vh;
+    width: 30vw;
+    height: 90vh;
+    margin-left: 25%;
   }
-  
 }
