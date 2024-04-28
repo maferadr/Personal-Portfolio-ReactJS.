@@ -32,7 +32,7 @@
 
 .myself-main{
   width: 50vw;
-  height: 60vh;
+  height: 65vh;
   margin-left: 15%;
   margin-top: 50%;
 }
@@ -312,6 +312,7 @@ button:hover{
   font-family: "Unna", serif;
   line-height: 1;
   padding-top: 2%;
+  font-size: 2.5vw;
 }
 
 .container-edu{
@@ -324,7 +325,7 @@ button:hover{
 
 .picture-education{
   width: 100vw;
-  height: 30vh;
+  height: 55vh;
   opacity: 0.7;
 }
 
@@ -333,6 +334,7 @@ button:hover{
   transition-duration: 2s;
   cursor: pointer;
 }
+
 
 /* Scroll Down animations */
 @keyframes show {
@@ -356,6 +358,28 @@ button:hover{
 
   animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
+}
+
+/* Wave styling */
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 275px;
+}
+
+.wave .shape-fill {
+  fill: #9B9B9B38;
 }
 
 @media (min-width: 992px){
@@ -466,11 +490,19 @@ button:hover{
     width: 30vw;
   }
 
+  .edu-text{
+    font-size: 1vw;
+  }
+
   .picture-education{
     width: 30vw;
     height: 100vh;
     float: right;
     justify-content: end;
+  }
+
+  #powder-edu{
+    display: block;
   }
 
   .myself-main{

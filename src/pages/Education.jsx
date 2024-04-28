@@ -36,11 +36,11 @@ export default function Contact(){
     return(
         <>
             <div className="bg-amber-50">
-            <div className="top-0 object-cover object-center right-0">
+            <div className="top-0 object-cover object-center right-0 absolute">
                     <img className="picture-education" src="https://images.pexels.com/photos/7944064/pexels-photo-7944064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img>
                 </div>
                 <div className="grid">
-                <img className="col-start-1 row-start-1 w-100 h-screen object-cover scale-y-[-1] opacity-70" src="/assets/orange.png"></img>
+                <img id="powder-edu" className="col-start-1 row-start-1 w-100 h-screen object-cover scale-y-[-1] opacity-70 hidden" src="/assets/orange.png"></img>
                 <Icons/>
                 <div className="absolute grid grid-rows-2 grid-flow-col gap-4 education-container w-100">
                     <div className="row-span-2 px-5 container-edu">

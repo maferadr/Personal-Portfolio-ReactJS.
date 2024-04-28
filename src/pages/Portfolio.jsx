@@ -72,7 +72,7 @@ export default function Portfolio(){
           <p className="portfolio-main">  
           Designing for people is what makes me Happy!
           </p>
-          <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
+          <div className="projects-display grid grid-flow-row-dense grid-cols-3 grid-rows-3 ... w-100">
               {projects.map((project)=>(
                 <div id="project-container" className="col-span-2 py-2" key={project.name}>
                    <div>
