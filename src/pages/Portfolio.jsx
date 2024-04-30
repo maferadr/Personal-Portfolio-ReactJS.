@@ -15,105 +15,85 @@ const projects = [
         imageSrc: 'https://github.com/venecoderr/couchlock-movie-finder/blob/main/assets/img/bg-test2.jpg?raw=true',
         href: 'https://venecoderr.github.io/couchlock-movie-finder/',
         repoHref: 'https://github.com/venecoderr/couchlock-movie-finder.git'
+        },
+        {
+          name: 'Weather Dashboard Application',
+          description: 'Third Party API that forecasts information about weather conditions from each city the User searches for.',
+          imageSrc: 'https://images.pexels.com/photos/2310641/pexels-photo-2310641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          href: 'https://maferadr.github.io/weather-dashboard/',
+          repoHref: 'https://github.com/maferadr/weather-dashboard.git'
+        },
+        {
+          name: 'Multiple Choice Quiz',
+          description: 'JavaScript Application Game that allows the user to interact for either correct or incorrect answers under boolean conditionals.',
+          imageSrc: 'https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          href: 'https://maferadr.github.io/multiple-choiceQuiz/',
+          repoHref: 'https://github.com/maferadr/multiple-choiceQuiz.git'
         }
 ];
 
 const practiceProjects = [
   {
-    name: 'Weather Dashboard Application',
-    description: 'Third Party API that forecasts information about weather conditions from each city the User searches for.',
-    imageSrc: 'https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    href: 'https://maferadr.github.io/weather-dashboard/',
-    repoHref: 'https://github.com/maferadr/weather-dashboard.git'
-  },
-  {
     name: 'Note Editor - PWA',
     description: 'Text Editor built as a Progressive Web Application allowing the user taking notes by working offline.',
-    imageSrc: '/assets/text-editor.png',
+    imageSrc: 'https://images.pexels.com/photos/19825347/pexels-photo-19825347/free-photo-of-madera-texto-cartas-letras.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     href: 'https://text-editor-pwa-jir8.onrender.com',
     repoHref: 'https://github.com/maferadr/Text-Editor-PWA.git'
   },
   {
     name: 'Password Generator',
     description: 'A JavaScript Application that allows the user to generate a random password meeting the criteria that the user desires.',
-    imageSrc: '/assets/password-generator.png',
+    imageSrc: 'https://images.pexels.com/photos/18069157/pexels-photo-18069157/free-photo-of-abstracto-resumen-tecnologia-investigacion.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     href: 'https://maferadr.github.io/password-generator-Maria/',
     repoHref: 'https://github.com/maferadr/password-generator-Maria.git'
   },
   {
     name: 'Note Taker - Express JS.',
     description: 'This Node.JS application allows user to interact with it and make him able to take, save, update and delete notes.',
-    imageSrc: '/assets/noteTaker.png',
+    imageSrc: 'https://images.pexels.com/photos/4210787/pexels-photo-4210787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     href: 'https://agile-waters-56527-455e40686738.herokuapp.com/',
     repoHref: 'https://github.com/maferadr/Note-Taker-ExpressJS.git'
-  },
-  {
-    name: 'Multiple Choice Quiz',
-    description: 'JavaScript Application Game that allows the user to interact for either correct or incorrect answers under boolean conditionals.',
-    imageSrc: 'https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    href: 'https://maferadr.github.io/multiple-choiceQuiz/',
-    repoHref: 'https://github.com/maferadr/multiple-choiceQuiz.git'
   }
 ]
 
 export default function Portfolio(){
     return(
         <>
-    <div>
-        <div className="absolute portfolio-display bg-amber-50">
-        <Icons/>
-        <div className="mx-auto max-w-7xl px-14">
-        <div className=" mx-auto max-w-2xl py-10 sm:py-20 lg:max-w-none lg:py-25">
-          <div className="flex justify-between">
-            <h2 className="portfolio">CRAFTING
-            <span className="good"> SOME</span> ART</h2>
-            <img id="bluePowder" className="fixed object object-right-bottom bottom-0" src="/assets/blue-powder.png"></img>
+        <div className="bg-amber-50 absolute w-screen h-screen pb-5">
+          <Icons/>
+          <div className="flex justify-center pt-8">
+            <h2 className="portfolio">
+              CRAFTING <span className="good">SOME </span>ART
+            </h2>
+            <img id="bluePowder" className="fixed object-cover bottom-0" src="/assets/blue-powder.png"></img>
           </div>
-          <p className="portfolio-main">  
-          Designing for people is what makes me Happy!
-          </p>
-          <div className="projects-display grid grid-flow-row-dense grid-cols-3 grid-rows-3 ... w-100">
+          <p className="portfolio-main top-0">Designing for people is what fulfills my Soul!</p>
+            <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
               {projects.map((project)=>(
-                <div id="project-container" className="col-span-2 py-2" key={project.name}>
-                   <div>
-                <img src={project.imageSrc} className="lg-img-project object-cover rounded"></img>
+                <div className="grid portfolio-container" key={project.name}>
+                <a href={project.href}>
+                  <img className="object-cover" src={project.imageSrc} id="lg-project"></img>
+                </a>
+                <a href={project.repoHref}>
+                  <p className="text-sm flex justify-center project-name">{project.name}</p>
+                </a>
               </div>
-                            
-              <h3 className="project-name mt-6 text-sm text-gray-500">
-                <a href={project.href}>{project.name}</a>
-              </h3>
-              <p className="text-portfolio md-project hidden">{project.description}</p>
-              <div className=" flex justify-center">
-                      <button className="repo-btn p-3 text-sm rounded">
-                      <a href={project.repoHref}>Get Repo</a>
-                      </button>
-                    </div>
+              ))}
+            </div>
+            
+            <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 extra-projects">
+              {practiceProjects.map((practice)=>(
+                <div key={practice.name} className=" portfolio-container">
+                  <a href={practice.href}>
+                    <img className="object-cover" src={practice.imageSrc} id="md-project"></img>
+                  </a>
+                  <a href={practice.repoHref}>
+                  <p className="text-sm flex justify-center project-name">{practice.name}</p>
+                </a>
                 </div>
-            ))}
-      
-            {/* Third project */}
-                {practiceProjects.map((practice) =>(
-                <div id="project-container" className="pl-2 py-2" key={practice.name}>
-                    <div>
-                      <img src={practice.imageSrc} className="md-img-project object-cover object-center rounded"></img>
-                    </div>
-                    <h3 id="md-project-name" className="project-name mt-6 text-sm text-gray-500">
-                      <a href={practice.href}>{practice.name}</a>
-                    </h3>
-                    <p className="text-portfolio md-project hidden">{practice.description}</p>
-                    <div className=" flex justify-center">
-                      <button className="repo-btn p-3 text-sm rounded">
-                      <a href={practice.repoHref}>Get Repo</a>
-                      </button>
-                    </div>
-                </div>
-                ))}
-          </div>
+              ))}
+            </div>
         </div>
-      </div>
-
-        </div>
-    </div>
       
         </>
     )

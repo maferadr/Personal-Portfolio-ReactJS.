@@ -82,7 +82,7 @@ h1{
   font-family: "Unna", serif;
   line-height: 1;
   font-size: 2.5vw;
-  padding: 5%;
+  padding: 3%;
   padding-bottom: 2%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 }
@@ -117,6 +117,11 @@ button:hover{
   position: relative;
   bottom: 1%;
   left: 1%;
+}
+
+#bluePowder{
+  width: 100%;
+  height: 100vh;
 }
 
 #about-title{
@@ -235,39 +240,11 @@ button:hover{
   letter-spacing: 2px;
 }
 
-.lg-img-project{
-  height: 40vh;
-  width: 100vw;
-}
-
-.lg-img-project:hover, .md-img-project:hover{
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.md-img-project{
-  height: 40vh;
-  width: 100vw;
-}
-
-#md-project-name{
-  line-height: 1;
-}
-
-
 .portfolio{
   color: black;
   font-family: "Patua One", serif;
   font-weight: 400;
   font-size: 5vw;
-}
-
-.project-name:hover{
-  color: black;
-}
-
-.repo-btn{
-  font-family: "Unna", serif;
 }
 
 .portfolio-main{
@@ -276,65 +253,58 @@ button:hover{
   flex-wrap: wrap;
   justify-content: center;
   letter-spacing: 2px;
-}
-
-.education-container{
-  padding-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 5%;
-}
-
-.edu-1-title{
-  font-family: "Patua One", serif;
-  font-weight: 400;
-  font-size: 3vw;
-  letter-spacing: 3px;
-}
-
-.edu-2-title{
-  letter-spacing: 0px;
-  font-family: "Patua One", serif;
-  font-weight: 400;
-  font-size: 3vw;
-}
-
-.edu-place{
-  font-family: "Unna", serif;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.525);
-  display: flex;
-  justify-content: center;
-  font-weight: bolder;
-}
-
-.edu-text{
-  font-family: "Unna", serif;
-  line-height: 1;
-  padding-top: 2%;
+  padding-bottom: 2%;
   font-size: 2.5vw;
 }
 
-.container-edu{
-  width: 85vw;
-}
+/* Zoom animation */
 
-#icon-carousel{
-  color: white;
-}
-
-.picture-education{
-  width: 100vw;
+.full {
+  width: 100%;
   height: 55vh;
-  opacity: 0.7;
+  margin-top: 0%;
+  left: 0;
+  right: 0;
+  display: block;
 }
 
-.picture-education:hover, .edu-place:hover{
-  transform: scale(1.1);
-  transition-duration: 2s;
+.zoom:hover{
+  animation: scale 30s linear infinite;
   cursor: pointer;
 }
 
+@keyframes scale {
+  50% {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+  }
+}
+
+.title-edu{
+  font-family: "Patua One", serif;
+  display: flex;
+  justify-content: center;
+  font-size: 3.5vw;
+  letter-spacing: 2px;
+}
+
+.ucf-logo{
+  width: 35vw;
+  height: 40vh;
+  float: left;
+}
+
+.experience, .project-name{
+  font-family: "Unna", serif;
+  letter-spacing: 0px;
+}
+
+.project-name:hover{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.304);
+}
 
 /* Scroll Down animations */
 @keyframes show {
@@ -348,38 +318,78 @@ button:hover{
   }
 }
 
-#project-container{
+.certificate-container, .education-container, .portfolio-container{
   view-timeline-name: --iframe;
   view-timeline-axis: block;
 
   animation-timeline: --iframe;
   animation-name: show;
-  animation-duration: 5s;
+  animation-duration: 10s;
 
-  animation-range: entry 10% cover 50%;
+  animation-range: entry 5% cover 12%;
   animation-fill-mode: both;
 }
 
-/* Wave styling */
-.wave {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.portfolio-container{
+  padding-bottom: 2%;
+}
+
+.extra-projects{
+  border-top: 1px solid rgba(0, 0, 0, 0.178);
+  margin-bottom: 2%;
+}
+
+#lg-project{
+  height: 50vh;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
 }
 
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(182% + 1.3px);
-  height: 275px;
+#md-project{
+  height: 40vh;
+  width: 100%;
 }
 
-.wave .shape-fill {
-  fill: #9B9B9B38;
+#lg-project:hover, #md-project:hover{
+  opacity: 0.7;
+}
+
+.sub-portfolio{
+  font-family: "Patua One", serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.sub-text-portfolio{
+  font-family: "Unna", serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.533);
+}
+
+.education-container{
+  margin-top: 5%;
+  float: right;
+}
+
+.education-description{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.edu-text{
+  font-family: "Unna", serif;
+  font-size: 2.5vw;
+  line-height: 1;
+}
+
+.certificate-container{
+  float: left;
+}
+
+.img-certificate:hover{
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 @media (min-width: 992px){
@@ -393,7 +403,7 @@ button:hover{
     min-height: 100vh;
   }
 
-  .text-description{
+  .text-description, .edu-text{
     font-size: 1vw;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     margin-top: 1%;
@@ -482,32 +492,27 @@ button:hover{
     font-size: 1.5vw;
   }
 
-  .education-container{
-    padding-left: 20%;
-  }
-
-  .container-edu{
-    width: 30vw;
-  }
-
-  .edu-text{
-    font-size: 1vw;
-  }
-
-  .picture-education{
-    width: 30vw;
-    height: 100vh;
-    float: right;
-    justify-content: end;
-  }
-
-  #powder-edu{
-    display: block;
-  }
-
   .myself-main{
     width: 30vw;
     height: 90vh;
     margin-left: 25%;
   }
+
+  .sub-text-portfolio, .sub-portfolio{
+    font-size: 1.5vw;
+  }
+
+  .education-description{
+    margin-left: 35%;
+    width: 100vw;    
+  }
+
+  .p-edu{
+    font-size: 1.2vw;
+  }
+
+  #ucf-picture{
+    height: 75vh;
+  }
+
 }
