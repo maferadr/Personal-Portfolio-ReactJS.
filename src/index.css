@@ -306,30 +306,6 @@ button:hover{
   border-bottom: 1px solid rgba(0, 0, 0, 0.304);
 }
 
-/* Scroll Down animations */
-@keyframes show {
-  from{
-      opacity: 0;
-      scale: 25%;
-  }
-  to{
-      opacity: 1;
-      scale: 100%;
-  }
-}
-
-.certificate-container, .education-container, .portfolio-container{
-  view-timeline-name: --iframe;
-  view-timeline-axis: block;
-
-  animation-timeline: --iframe;
-  animation-name: show;
-  animation-duration: 10s;
-
-  animation-range: entry 5% cover 12%;
-  animation-fill-mode: both;
-}
-
 .portfolio-container{
   padding-bottom: 2%;
 }
@@ -511,8 +487,29 @@ button:hover{
     font-size: 1.2vw;
   }
 
-  #ucf-picture{
-    height: 75vh;
+  /* Scroll Down animations */
+@keyframes show {
+  from{
+      opacity: 0;
+      scale: 25%;
   }
+  to{
+      opacity: 1;
+      scale: 100%;
+  }
+}
+
+.certificate-container, .education-container, .portfolio-container{
+  view-timeline-name: --iframe;
+  view-timeline-axis: block;
+
+  animation-timeline: --iframe;
+  animation-name: show;
+  animation-duration: 10s;
+
+  animation-range: entry 5% cover 12%;
+  animation-fill-mode: both;
+}
+
 
 }

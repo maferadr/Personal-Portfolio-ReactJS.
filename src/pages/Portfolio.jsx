@@ -59,13 +59,13 @@ const practiceProjects = [
 export default function Portfolio(){
     return(
         <>
-        <div className="bg-amber-50 absolute w-screen h-screen pb-5">
+        <div className="absolute w-screen h-screen pb-5">
           <Icons/>
           <div className="flex justify-center pt-8">
             <h2 className="portfolio">
               CRAFTING <span className="good">SOME </span>ART
             </h2>
-            <img id="bluePowder" className="fixed object-cover bottom-0" src="/assets/blue-powder.png"></img>
+            <img id="bluePowder" className="fixed object-cover bottom-0 z-[-1]" src="/assets/blue-powder.png"></img>
           </div>
           <p className="portfolio-main top-0">Designing for people is what fulfills my Soul!</p>
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
