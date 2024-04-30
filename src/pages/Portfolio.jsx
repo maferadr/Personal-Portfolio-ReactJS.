@@ -74,9 +74,12 @@ export default function Portfolio(){
                 <a href={project.href}>
                   <img className="object-cover" src={project.imageSrc} id="lg-project"></img>
                 </a>
-                <a href={project.repoHref}>
-                  <p className="text-sm flex justify-center project-name">{project.name}</p>
-                </a>
+                <div className="flex justify-center">
+                  <button className="bg-transparent rounded p-1 border">
+                    <a href={project.repoHref} className="text-sm project-name">
+                    {project.name}</a>
+                  </button>
+                </div>
               </div>
               ))}
             </div>
@@ -87,9 +90,12 @@ export default function Portfolio(){
                   <a href={practice.href}>
                     <img className="object-cover" src={practice.imageSrc} id="md-project"></img>
                   </a>
-                  <a href={practice.repoHref}>
-                  <p className="text-sm flex justify-center project-name">{practice.name}</p>
-                </a>
+                  <div className="flex justify-center">
+                  <button className="bg-transparent rounded p-1 border">
+                    <a href={practice.repoHref} className="text-sm project-name">
+                    {practice.name}</a>
+                  </button>
+                </div>
                 </div>
               ))}
             </div>

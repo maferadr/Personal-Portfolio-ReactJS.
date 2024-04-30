@@ -368,6 +368,10 @@ button:hover{
   cursor: pointer;
 }
 
+#education-text{
+  margin-top: 2%;
+}
+
 @media (min-width: 992px){
 
   #title-name{

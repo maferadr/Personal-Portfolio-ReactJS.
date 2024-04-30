@@ -1,22 +1,29 @@
 import React from "react";
 import Icons from "../components/icons";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Contact(){
 
     return(
         <>
-          <div className="bg-amber-50">
+          <div>
           <Icons/>
             <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg" className="object-cover full zoom"></img>
-            <img className="col-start-1 row-start-1 w-100 h-[80vh] object-cover scale-y-[-1] opacity-70 fixed" src="/assets/orange.png"></img>
-            <div className="bg-amber-50">
-                <h1 className="title-edu">EDUCATION & <span className="experience"> Experience</span></h1>
-                <p className="text-description justify-center">Understanding that every field that you decide to become a professional at takes even more time than whichever degree you get,
-                    is what demonstrates you how passionate you really feel at what you're doing. My short path in Coding has made me realized that
-                    there's never enough to learn when you really fall in love with you career, because the deeper you go through, the more you discover
-                    out of it.
+            <img className="col-start-1 row-start-1 w-100 h-[80vh] object-cover scale-y-[-1] opacity-70 fixed z-[-1]" src="/assets/orange.png"></img>
+            <div>
+                <h1 className="title-edu">EDUCATION & <span className="experience"> 
+                <TypeAnimation
+                            sequence={['Expe', 500, 'Experience.', 500]}
+                            repeat={1}
+                            speed={15}
+                            /></span></h1>
+                <p id="education-text" className="text-description justify-center">My short path in this field reduces my perspective about <strong>LIFE </strong>in just one thing
                     <br></br>
-                    Experience matters, but your passion does even more.
+                    "Experience matters, but your passion for success does even more."
+                    <br></br>
+                    The meaning of <strong>Success</strong> can emphasize in numerous ways, being completely subjective in what would be the Scope Limit to reach it out;
+                    for me, that's the most interest part about Sucess: There's no Scope Limit to reach it out, because the higher you go, the lighter the path is going to look like.
+                    Success would just reduce to that for me, the fact of keep on growing and keep on learning from that. The fact of not giving up.
                 </p>
             </div>
             <div className="education-container pb-5">
