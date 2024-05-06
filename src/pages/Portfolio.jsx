@@ -58,8 +58,7 @@ const practiceProjects = [
 
 export default function Portfolio(){
     return(
-        <>
-        <div className="absolute w-screen h-screen pb-5">
+        <div className="pb-5">
           <Icons/>
           <div className="flex justify-center pt-8">
             <h2 className="portfolio">
@@ -100,7 +99,5 @@ export default function Portfolio(){
               ))}
             </div>
         </div>
-      
-        </>
-    )
+          )
 };

@@ -40,11 +40,11 @@ const Skills = [
 export default function AboutMe(){
     return (
         <>
-            <div id="aboutMe" className="bg-amber-50 w-screen">
+            <div id="aboutMe" className="bg-orange-100 w-screen">
                 <div className="img-container grid">
                     <img id="orange-powder" className="col-start-1 row-start-1 w-70 h-[50%] object-cover object-top-right scale-y-[-1] opacity-70" src="/assets/orange.png"></img>
                     <div className="picture-container left-0">
-                        <img className="about-picture object-cover" src="/assets/about-me.jpeg"></img>
+                        <img className="about-picture object-cover" src="/assets/about-me.png"></img>
                     <div className="absolute justify-center text-container">
                         <h1 className="ml-[65%]">
                             <span id="about-title">MARIA</span>
