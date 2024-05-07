@@ -315,6 +315,14 @@ button:hover{
   border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 }
 
+@media (min-width: 600px){
+  .myself-main{
+    width: 35vw;
+    height: 55vh;
+    margin-left: 15%;
+  }
+}
+
 @media (min-width: 992px){
 
   #title-name{
