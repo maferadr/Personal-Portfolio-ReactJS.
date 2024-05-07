@@ -62,32 +62,28 @@ export default function Contact(){
                     <span className="good">EXPERIENCE.</span></h1>
                 </div>
           <img className="col-start-1 row-start-1 w-100 h-[80vh] object-cover scale-y-[-1] opacity-70 fixed z-[-1]" src="/assets/orange.png"></img>
-          
+          <div className="grid grid-cols-1 gap-x-2 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6 main-card-div pt-8">
           {majorEducation.map((education)=>(
-            <div data-aos='zoom-in-up' className="max-w-sm  lg:max-w-full lg:flex justify-center card-container">
-            <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-                <a href={education.href}>
-                <img className="img-edu" src={education.imageSrc}></img>
-                </a>
-            </div>
-            <div className="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-            <div className="mb-8">
+            <div data-aos='zoom-in-up' class="max-w-sm rounded overflow-hidden shadow-lg card-container mb-2">
             <a href={education.href}>
-            <p className="text-sm text-gray-600 flex items-center">
+            <img className="w-full img-edu object-cover" src={education.imageSrc}></img>
+                </a>
+            <div className="px-6 py-4">
+                <a className="font-bold mb-2" href={education.href}>
                 {education.name}
-            </p>
-            </a>
-          <div className="text-gray-900 font-bold text-xl mb-2">{education.title}</div>
-          <p className="text-gray-700 text-base">{education.description}</p>
-        </div>
-        <div className="flex items-center">
-          <div className="text-sm">
-            <p className="text-gray-600">{education.date}</p>
-          </div>
-        </div>
-      </div>
-        </div>
+                </a>
+                <div className="text-gray-900 opacity-70">{education.title}</div>
+                <p className="text-gray-700 text-base">
+                {education.description}
+                </p>
+            </div>
+            <div className="px-6 pt-4 pb-2 flex justify-center">
+                <span className="inline-block bg-transparent border rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 edu-date">{education.date}</span>
+            </div>
+            </div>
           ))}
+          </div>
+          
           
         </div> 
         </>

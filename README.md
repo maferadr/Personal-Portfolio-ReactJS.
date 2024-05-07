@@ -1,8 +1,15 @@
-# React + Vite
+# Personal Portfolio - Maria Angulo.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## Description 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As part of launching my professional career and showcase an identify as a developer, I decided to create this pure CSS portfolio built with React JS (and of course some Tailwind CSS for a cuter layout presentation 🤓). Enjoy and feel free to have some inspiration about it!.
+
+## Author
+
+[Angulo, Maria](https://github.com/maferadr)
+
+## Deployment
+
+This Portfolio is deployed on Netlify. [Click Here](https://maria-angulo-portfolio.netlify.app) to have a better look at it.
