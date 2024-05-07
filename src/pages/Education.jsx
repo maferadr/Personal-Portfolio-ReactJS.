@@ -1,5 +1,6 @@
 import React from "react";
 import Icons from "../components/icons";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Contact(){
 
@@ -36,7 +37,7 @@ export default function Contact(){
             name: 'Coderhouse',
             title: 'React JS',
             href: 'https://drive.google.com/file/d/1OYWHv5XxbIi3iCSS2tOq7j1scHfMJkQj/view?usp=sharing',
-            imageSrc: 'https://mir-s3-cdn-cf.behance.net/user/276/403d16459831423.5dea877440464.png',
+            imageSrc: 'https://http2.mlstatic.com/D_NQ_NP_613143-MLA72045477825_102023-O.webp',
             description: 'React JS Certificate focused on a 3months intensive program leaded to learn React JS fundamentals based on an e-commerce final project.',
             date: 'January 2023 - March 2023'
         },
@@ -59,28 +60,33 @@ export default function Contact(){
                 <div className="flex justify-center pt-8">
                     <h1 className="portfolio">EDUCATION & 
                     <br></br>
-                    <span className="good">EXPERIENCE.</span></h1>
+                    <span id="title-2">
+                    <TypeAnimation
+                            sequence={['EXPE', 500, 'EXPERIENCE.', 500]}
+                            repeat={1}
+                            speed={15}
+                            />
+                    </span></h1>
                 </div>
           <img className="col-start-1 row-start-1 w-100 h-[80vh] object-cover scale-y-[-1] opacity-70 fixed z-[-1]" src="/assets/orange.png"></img>
           <div className="grid grid-cols-1 gap-x-2 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6 main-card-div pt-8">
           {majorEducation.map((education)=>(
-            <div data-aos='zoom-in-up' class="max-w-sm rounded overflow-hidden shadow-lg card-container mb-2">
-            <a href={education.href}>
-            <img className="w-full img-edu object-cover" src={education.imageSrc}></img>
-                </a>
-            <div className="px-6 py-4">
-                <a className="font-bold mb-2" href={education.href}>
-                {education.name}
-                </a>
-                <div className="text-gray-900 opacity-70">{education.title}</div>
-                <p className="text-gray-700 text-base">
-                {education.description}
-                </p>
-            </div>
-            <div className="px-6 pt-4 pb-2 flex justify-center">
-                <span className="inline-block bg-transparent border rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 edu-date">{education.date}</span>
-            </div>
-            </div>
+          <div data-aos='zoom-in-up' data-aos-delay="100" className="grid portfolio-container mb-2" key={education.name}>
+          <a href={education.href}>
+            <img className="object-cover" src={education.imageSrc} id="lg-project"></img>
+          </a>
+          <div className="px-3">
+                <h2 className="flex justify-center text-sub">{education.title}</h2>
+                <p className="flex justify-center text-sm">{education.description}</p>
+                <p className="flex justify-center text-sm opacity-70">{education.date}</p>
+          </div>
+          <div className="flex justify-center">
+            <button className="bg-transparent rounded p-1 border">
+              <a href={education.href} className="text-sm project-name">
+              {education.name}</a>
+            </button>
+          </div>
+        </div>
           ))}
           </div>
           

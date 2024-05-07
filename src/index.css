@@ -325,26 +325,17 @@ button:hover, .edu-date:hover{
   padding-top: 2%;
 }
 
-.main-card-div{
-  margin-left: 2%;
-}
-
-
 
 @media (max-width: 600px){
   .myself-main{
-    width: 65vw;
-    height: 55vh;
-    margin-left: 15%;
+    width: 68vw;
+    height: 58vh;
+    margin-left: 12%;
   }
 
   .main-port-container{
     flex-wrap: wrap;
     margin-top: 65%;
-  }
-
-  .main-card-div{
-    margin-left: 10%;
   }
 
   .img-edu{
@@ -454,9 +445,9 @@ button:hover, .edu-date:hover{
   }
 
   .myself-main{
-    width: 36vw;
-    height: 82vh;
-    margin-left: 28.5%;
+    width: 30vw;
+    height: 80vh;
+    margin-left: 27%;
   }
 
   .sub-text-portfolio, .sub-portfolio{
