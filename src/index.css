@@ -32,7 +32,7 @@
 
 .myself-main{
   width: 50vw;
-  height: 70vh;
+  height: 65vh;
   margin-left: 15%;
 }
 
@@ -257,55 +257,6 @@ button:hover{
   font-size: 2.5vw;
 }
 
-/* Zoom animation */
-
-.full {
-  width: 100%;
-  height: 55vh;
-  margin-top: 0%;
-  left: 0;
-  right: 0;
-  display: block;
-}
-
-.zoom:hover{
-  animation: scale 30s linear infinite;
-  cursor: pointer;
-}
-
-@keyframes scale {
-  50% {
-    -webkit-transform:scale(1.1);
-    -moz-transform:scale(1.1);
-    -ms-transform:scale(1.1);
-    -o-transform:scale(1.1);
-    transform:scale(1.1);
-  }
-}
-
-.title-edu{
-  font-family: "Patua One", serif;
-  display: flex;
-  justify-content: center;
-  font-size: 3.5vw;
-  letter-spacing: 2px;
-}
-
-.ucf-logo{
-  width: 35vw;
-  height: 40vh;
-  float: left;
-}
-
-.experience, .project-name{
-  font-family: "Unna", serif;
-  letter-spacing: 0px;
-}
-
-.project-name:hover{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.304);
-}
-
 .portfolio-container{
   padding-bottom: 2%;
 }
@@ -344,32 +295,24 @@ button:hover{
   border-bottom: 1px solid rgba(0, 0, 0, 0.533);
 }
 
-.education-container{
-  margin-top: 5%;
-  float: right;
+.edu-title, .edu-subtitle{
+  font-family: "Patua One", serif;
+  font-size: 4vw;
 }
 
-.education-description{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+.edu-subtitle{
+  letter-spacing: 1.5px;
+  padding-left: 25%;
 }
 
-.edu-text{
+.img-education{
+  height: 55vh;
+}
+
+.edu-description{
   font-family: "Unna", serif;
-  font-size: 2.5vw;
   line-height: 1;
-}
-
-.certificate-container{
-  float: left;
-}
-
-.img-certificate:hover{
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-#education-text{
-  margin-top: 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 }
 
 @media (min-width: 992px){
@@ -474,22 +417,21 @@ button:hover{
   }
 
   .myself-main{
-    width: 28vw;
-    height: 80vh;
-    margin-left: 35%;
+    width: 35vw;
+    height: 82vh;
+    margin-left: 25%;
   }
 
   .sub-text-portfolio, .sub-portfolio{
     font-size: 1.5vw;
   }
 
-  .education-description{
-    margin-left: 35%;
-    width: 100vw;    
+  .edu-title, .edu-subtitle{
+    font-size: 3vw;
   }
 
-  .p-edu{
-    font-size: 1.2vw;
+  .education-container{
+    min-height: 100vh;
   }
 
   /* Scroll Down animations */
@@ -504,7 +446,7 @@ button:hover{
   }
 }
 
-.certificate-container, .education-container, .portfolio-container{
+.certificate-container, .portfolio-container{
   view-timeline-name: --iframe;
   view-timeline-axis: block;
 
