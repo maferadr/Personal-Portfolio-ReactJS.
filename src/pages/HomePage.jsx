@@ -1,5 +1,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import AboutMe from "./AboutMe";
+import Portfolio from "./Portfolio";
+import Contact from "./Education";
 
 export default function HomePage(){
     return(
@@ -35,6 +38,9 @@ export default function HomePage(){
                     <h3 id="title-name"> 2024 </h3>
                 </div>
             </div>
+      <AboutMe/>
+      <Portfolio/>
+      <Contact/>
         </div>
     )
 }

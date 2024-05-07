@@ -1,12 +1,12 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import { AiOutlineMenu, 
         AiOutlineHome, 
         AiOutlineUser, 
         AiOutlineFolderOpen, 
         AiOutlineSolution } from 'react-icons/ai'
 import { Link } from "react-router-dom";
-
-//Ask about link properties and how do they work in order to be displayed?
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Nav(){
 
@@ -14,6 +14,10 @@ export default function Nav(){
     const handleNav = () =>{
         setNav(!nav);
     };
+
+    useEffect(()=>{
+        Aos.init({duration: 1000})
+    }, [])
 
     return(
         <>
@@ -47,7 +51,7 @@ export default function Nav(){
                            ''
                         )}
 
-                <div id="title-name" className="md:block hidden fixed top-[2%] z-10 right-4">
+                <div data-aos='fade-down' id="title-name" className="md:block hidden fixed top-[2%] z-10 right-4">
                     <div className="flex flex-row">
                             <Link id="navbar" to='/' className="justify-between m-3 border-b-2">HOME</Link>
                             <Link id="navbar" to='/about' className="justify-between m-3 border-b-2">ABOUT ME</Link>
