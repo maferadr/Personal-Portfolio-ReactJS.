@@ -325,6 +325,16 @@ button:hover, .edu-date:hover{
   padding-top: 2%;
 }
 
+.text-education{
+  color: white;
+}
+.edu-nav{
+  color: white;
+}
+
+.footer-container{
+  font-family: "Unna", serif;
+}
 
 @media (max-width: 600px){
   .myself-main{

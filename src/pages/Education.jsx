@@ -1,6 +1,8 @@
 import React from "react";
 import Icons from "../components/icons";
 import { TypeAnimation } from "react-type-animation";
+import Footer from "./Footer";
+import Nav from "../components/Nav";
 
 export default function Contact(){
 
@@ -55,10 +57,12 @@ export default function Contact(){
 
     return(
         <>
-          <div data-aos='fade-up-right' className="education-container bg-orange-100">
-            <Icons/>
+          <div data-aos='fade-up-right' className="education-container bg-black">
+            <div className="text-education">
+            <Icons />
+            </div>
                 <div className="flex justify-center pt-8">
-                    <h1 className="portfolio">EDUCATION & 
+                    <h1 className="portfolio text-education">EDUCATION & 
                     <br></br>
                     <span id="title-2">
                     <TypeAnimation
@@ -68,7 +72,6 @@ export default function Contact(){
                             />
                     </span></h1>
                 </div>
-          <img className="col-start-1 row-start-1 w-100 h-[80vh] object-cover scale-y-[-1] opacity-70 fixed z-[-1]" src="/assets/orange.png"></img>
           <div className="grid grid-cols-1 gap-x-2 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6 main-card-div pt-8">
           {majorEducation.map((education)=>(
           <div data-aos='zoom-in-up' data-aos-delay="100" className="grid portfolio-container mb-2" key={education.name}>
@@ -76,13 +79,13 @@ export default function Contact(){
             <img className="object-cover" src={education.imageSrc} id="lg-project"></img>
           </a>
           <div className="px-3">
-                <h2 className="flex justify-center text-sub">{education.title}</h2>
-                <p className="flex justify-center text-sm">{education.description}</p>
-                <p className="flex justify-center text-sm opacity-70">{education.date}</p>
+                <h2 className="flex justify-center text-sub text-education">{education.title}</h2>
+                <p className="flex justify-center text-sm text-education">{education.description}</p>
+                <p className="flex justify-center text-sm opacity-70 text-education">{education.date}</p>
           </div>
           <div className="flex justify-center">
             <button className="bg-transparent rounded p-1 border">
-              <a href={education.href} className="text-sm project-name">
+              <a href={education.href} className="text-sm project-name text-education">
               {education.name}</a>
             </button>
           </div>
@@ -92,6 +95,7 @@ export default function Contact(){
           
           
         </div> 
+        <Footer/>
         </>
     )
 }
