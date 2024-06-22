@@ -43,28 +43,17 @@ export default function Contact(){
             description: 'React JS Certificate focused on a 3months intensive program leaded to learn React JS fundamentals based on an e-commerce final project.',
             date: 'January 2023 - March 2023'
         },
-        {
-            id: 5,
-            name: 'Harvard University - Edx Online.',
-            title: 'Entrepreneurship in Emerging Economies.',
-            href: 'https://drive.google.com/file/d/15m14mlKfcj4HfSvsQRtg5skaCrak8LEp/view?usp=sharing',
-            imageSrc: 'https://www.pngitem.com/pimgs/m/17-172468_harvard-logo-harvard-university-logo-hd-png-download.png',
-            description: 'Entrepreneurship and innovation tackling complex social problems in emerging economies.',
-            date: 'July 2020 - November 2020.'
-        }
     ]
 
 
     return(
         <>
-          <div data-aos='fade-up-right' className="education-container bg-black">
-            <div className="text-education">
+          <div data-aos='fade-up-right' className="education-container bg-orange-50">
             <Icons />
-            </div>
                 <div className="flex justify-center pt-8">
                     <h1 className="portfolio text-education">EDUCATION & 
                     <br></br>
-                    <span id="title-2">
+                    <span className="ml-5">
                     <TypeAnimation
                             sequence={['EXPE', 500, 'EXPERIENCE.', 500]}
                             repeat={1}
@@ -78,8 +67,8 @@ export default function Contact(){
           <a href={education.href}>
             <img className="object-cover" src={education.imageSrc} id="lg-project"></img>
           </a>
+          <h2 className="absolute title-education text-white">{education.title}</h2>
           <div className="px-3">
-                <h2 className="flex justify-center text-sub text-education">{education.title}</h2>
                 <p className="flex justify-center text-sm text-education">{education.description}</p>
                 <p className="flex justify-center text-sm opacity-70 text-education">{education.date}</p>
           </div>

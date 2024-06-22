@@ -71,7 +71,7 @@ export default function AboutMe(){
                         </p>
                         <div id="resume-btn" className="absolute button top-2">
                         <button className="bg-transparent rounded p-3">
-                            <a href="https://docs.google.com/document/d/1HPLYZVccxTxvJjwGNhOOz-vbmU-zZBSSz-FGQ1KtZ1Y/edit?usp=sharing">
+                            <a href="https://docs.google.com/document/d/1jFxL14_I6nIb1b_2o-07CcRkAIAEAsXbKKZ-q-5C05E/edit?usp=sharing">
                                 Resume
                             </a>
                         </button>
