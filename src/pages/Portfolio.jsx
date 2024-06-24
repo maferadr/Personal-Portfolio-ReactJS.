@@ -5,6 +5,13 @@ export default function Portfolio(){
 
   const projects = [
     {
+      name: 'Alefer - Proyectos e Ingenieria.',
+      description: 'React JS, CSS & HTML5, JavaScript.',
+      imageSrc: 'https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg',
+      href: 'https://alefer-ingenieria.netlify.app',
+      repoHref: 'https://github.com/maferadr/Alefer-Engineering.git'
+    },
+    {
       name: 'ArtisanConnect',
       description: 'React JS, Express JS, Mongo DB, Node JS, JSON Webtoken.',
       imageSrc: 'https://images.pexels.com/photos/5709271/pexels-photo-5709271.jpeg',
