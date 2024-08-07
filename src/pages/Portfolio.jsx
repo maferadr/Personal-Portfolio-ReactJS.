@@ -12,6 +12,13 @@ export default function Portfolio(){
       repoHref: 'https://github.com/maferadr/Alefer-Engineering.git'
     },
     {
+      name: 'ShapeShine Frontend Web Development',
+      description: 'React JS, CSS, Tailwind CSS, JavaScript',
+      imageSrc: 'https://images.pexels.com/photos/4164764/pexels-photo-4164764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      href: 'https://shape-shine.netlify.app',
+      repoHref: 'https://github.com/maferadr/Shape-Shine-Project.git'
+    },
+    {
       name: 'ArtisanConnect',
       description: 'React JS, Express JS, Mongo DB, Node JS, JSON Webtoken.',
       imageSrc: 'https://images.pexels.com/photos/5709271/pexels-photo-5709271.jpeg',
@@ -38,13 +45,6 @@ export default function Portfolio(){
             imageSrc: 'https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
             href: 'https://maferadr.github.io/multiple-choiceQuiz/',
             repoHref: 'https://github.com/maferadr/multiple-choiceQuiz.git'
-          },
-          {
-            name: 'Note Editor - PWA',
-            description: 'Progressive Web Application - Node JS.',
-            imageSrc: 'https://images.pexels.com/photos/19825347/pexels-photo-19825347/free-photo-of-madera-texto-cartas-letras.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-            href: 'https://text-editor-pwa-jir8.onrender.com',
-            repoHref: 'https://github.com/maferadr/Text-Editor-PWA.git'
           },
           {
             name: 'Password Generator',
