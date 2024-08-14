@@ -398,7 +398,7 @@ button:hover, .edu-date:hover{
 }
 
 /* Tablet Size */
-@media (max-width: 991px){
+@media (min-width: 601px){
   .myself-main{
     width: 55vw;
     height: 60vh;
