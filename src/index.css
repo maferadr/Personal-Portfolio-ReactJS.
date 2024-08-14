@@ -397,6 +397,15 @@ button:hover, .edu-date:hover{
   }
 }
 
+/* Tablet Size */
+@media (max-width: 991px){
+  .myself-main{
+    width: 55vw;
+    height: 60vh;
+  }
+}
+
+
 @media (min-width: 992px){
 
   #title-name{
