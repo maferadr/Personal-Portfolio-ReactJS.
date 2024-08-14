@@ -182,6 +182,10 @@ button:hover, .edu-date:hover{
   padding-left: 5%;
 }
 
+.icon{
+  font-size: 3.5vw;
+}
+
 .second-title{
   font-family: "Patua One", serif;
   font-weight: 400;
@@ -246,9 +250,10 @@ button:hover, .edu-date:hover{
 
 .portfolio{
   color: black;
-  font-family: "Patua One", serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 5vw;
+  opacity: 0.6;
 }
 
 .portfolio-main{
@@ -329,14 +334,6 @@ button:hover, .edu-date:hover{
   color: white;
 }
 
-.footer-container{
-  font-family: "Unna", serif;
-}
-
-.wrap-footer{
-  font-size: 4vw;
-}
-
 .gradient-black{
   height: 50vh;
   width: 100%;
@@ -371,15 +368,23 @@ button:hover, .edu-date:hover{
   cursor: pointer;
 }
 
-.contact-me{
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+.contact{
+  font-family: "Bebas Neue", sans-serif;
+  opacity: 0.6;
+  border-top: 1px solid rgba(0, 0, 0, 0.286);
+  font-size: 3.7vw;
 }
+
+.text-contact{
+  font-family: "Bebas Neue", sans-serif;
+  opacity: 0.6;
+}
+
 
 @media (max-width: 600px){
   .myself-main{
-    width: 68vw;
-    height: 58vh;
+    width: 56vw;
+    height: 60vh;
     margin-left: 22%;
   }
 
@@ -532,7 +537,8 @@ button:hover, .edu-date:hover{
     margin-top: 100%;
   }
 
-  .wrap-footer{
+  .icon , .contact{
     font-size: 2vw;
   }
+
 }
