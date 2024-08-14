@@ -380,17 +380,10 @@ button:hover, .edu-date:hover{
   opacity: 0.6;
 }
 
-@media (max-width: 400px){
+@media (max-width: 600px){
   .myself-main{
     width: 68vw;
     height: 58vh;
-  }
-}
-
-@media (max-width: 600px){
-  .myself-main{
-    width: 56vw;
-    height: 60vh;
     margin-left: 22%;
   }
 
